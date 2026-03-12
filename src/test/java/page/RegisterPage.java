@@ -38,18 +38,17 @@ public class RegisterPage extends BasePage {
         postalCodeField.sendKeys(EnvConfig.getPostalCode());
         cityField.sendKeys(EnvConfig.getCity());
         stateField.sendKeys(EnvConfig.getState());
-
         new Select(wait.until(ExpectedConditions.visibilityOf(countryField)))
                 .selectByVisibleText(EnvConfig.getCountry());
-
         phoneField.sendKeys(EnvConfig.getPhone());
         emailField.sendKeys(EnvConfig.getEmail());
         passwordField.sendKeys(pass);
-
-        submitButton.click();
         return this;
     }
 
+    public void clickRegisterButton(){
+        submitButton.click();
+    }
     public String getLoginTitle() {
         return wait.until(ExpectedConditions.visibilityOf(loginTitle)).getText();
     }

@@ -1,16 +1,9 @@
 Feature: Registering user account
 
-  Scenario: user want to register an account
-    Given That as a customer is on homepage
-    When A customer click on sing in on navigation bar
-    Then the login form is opened
-
-  Scenario: customer is on login form
-    When A customer click on Register link on login form
-    Then A form of registering customer is opened
-
-  Scenario: Customer filling the register form
-    And A customer is on register page
-    When A customer enter valid credential
-    Then A successful message is displayed
-
+  Scenario: Customer successfully registers an account
+    Given the customer is on the Toolshop homepage
+    When the customer clicks on the "Sign In" link
+    And the customer clicks on the "Register your account" register link
+    And the customer fills in the registration form
+    And the customer clicks the "Register" button
+    Then the customer should be redirected to the login page
