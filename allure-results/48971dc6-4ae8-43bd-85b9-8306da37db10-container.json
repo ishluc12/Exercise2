@@ -1,0 +1,1 @@
+{"uuid":"48971dc6-4ae8-43bd-85b9-8306da37db10","name":"Scenario: Customer logs in with valid credentials","children":["3e1d6698-3075-4672-aee2-0af102b50c6b"],"befores":[{"name":"hooks.Hooks.before()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1773324445836,"stop":1773324447167}],"afters":[],"start":1773324445836,"stop":1773324451189}

@@ -5,6 +5,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class EnvConfig {
     private static final Dotenv dotenv = Dotenv.load();
 
+    //register credentials getters
     public static String getFirstName() { return dotenv.get("TEST_FIRST_NAME"); }
     public static String getLastName() { return dotenv.get("TEST_LAST_NAME"); }
     public static String getDob() { return dotenv.get("TEST_DOB"); }
@@ -16,4 +17,10 @@ public class EnvConfig {
     public static String getPhone() { return dotenv.get("TEST_PHONE"); }
     public static String getEmail() { return dotenv.get("TEST_EMAIL"); }
     public static String getPassword() { return dotenv.get("TEST_PASSWORD"); }
+
+    // Login credentials getters
+    public static String getLoginEmail() {return dotenv.get("LOGIN_EMAIL");}
+    public static String getLoginPassword() {
+        return dotenv.get("LOGIN_PASSWORD");
+    }
 }
