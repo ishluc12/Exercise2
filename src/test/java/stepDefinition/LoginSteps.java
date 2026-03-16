@@ -29,7 +29,7 @@ public class LoginSteps {
         loginPage.clickLoginButton();
     }
 
-    @Then("the customer is directed to the my accoun page")
+    @Then("the customer is directed to the my account page")
     public void the_customer_is_directed_to_the_my_account_page() {
         String result=loginPage.isAccountTitleDisplayed();
         assertTrue(result.contains("My account"),
