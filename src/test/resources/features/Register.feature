@@ -1,3 +1,4 @@
+@register
 Feature: Registering user account
 
   Scenario: Customer successfully registers an account

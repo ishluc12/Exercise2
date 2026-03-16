@@ -1,3 +1,4 @@
+@login
 Feature: Customer Login
 
   As a registered customer,
