@@ -7,5 +7,5 @@ Feature: Registering user account
     And the customer clicks on the "Register your account" register link
     And the customer fills in the registration form
     And the customer clicks the "Register" button
-    Then the customer should be redirected to the login form page
+    Then the customer should be redirected to the login form page view
 
